@@ -39,7 +39,7 @@
             key-positions = <11 12>;
         };
 
-        muhennkann {
+        escape {
             bindings = <&to_layer_0 ESCAPE>;
             key-positions = <0 1>;
         };
