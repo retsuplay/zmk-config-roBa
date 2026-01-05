@@ -121,9 +121,9 @@
         FUNCTION {
             bindings = <
 &kp ESC         &kp EXCLAMATION  &kp HASH           &kp JP_CARET    &kp JP_ASTERISK                                      &kp JP_BACKQUOTE   &kp JP_QUOTE        &kp JP_LPAREN       &kp JP_RPAREN       &kp JP_EQUAL
-&kp TAB         &kp QUESTION     &kp DOLLAR         &kp MINUS       &kp PERCENT     &kp LC(LA(KP_NUMBER_0))      &trans  &kp JP_YEN         &kp JP_DQUOTE       &kp JP_LBRACKET     &kp JP_RBRACKET     &kp JP_PLUS
+&kp TAB         &kp QUESTION     &kp DOLLAR         &kp MINUS       &kp PERCENT     &kp LC(LA(KP_NUMBER_0))      &trans  &kp SLASH          &kp JP_DQUOTE       &kp JP_LBRACKET     &kp JP_RBRACKET     &kp JP_PLUS
 &kp LEFT_SHIFT  &trans           &kp JP_AMPERSAND   &kp JP_TILDE    &kp JP_AT       &trans                       &trans  &kp JP_PIPE        &kp JP_UNDERSCORE   &kp JP_LBRACE       &kp JP_RBRACE       &kp MINUS
-&trans          &trans           &trans             &trans          &trans          &trans                       &trans  &trans                                                                         &kp SLASH
+&trans          &trans           &trans             &trans          &trans          &trans                       &trans  &trans                                                                         &kp JP_YEN
             >;
         };
 
