@@ -43,6 +43,7 @@
             <&kp LEFT_ARROW>,
             <&kp UP_ARROW>,
             <&kp DOWN_ARROW>;
+
         tick = <10>;
         wait-ms = <5>;
         tap-ms = <5>;
@@ -55,12 +56,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <11 12>;
+            key-positions = <1 2>;
         };
 
         escape {
@@ -109,9 +105,9 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W     &kp E         &kp R        &kp T                                             &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S     &kp D         &kp F        &kp G        &kp LS(LG(S))        &kp MINUS       &kp H      &kp J  &lt 5 K    &kp L    &kp BACKSPACE
-&mt LEFT_SHIFT Z  &kp X     &kp C         &kp V        &lt 6 B      &kp JP_COLON       &kp SEMICOLON   &kp N      &kp M  &kp COMMA  &kp DOT  &kp ENTER
+&kp Q             &kp W     &kp E         &kp R          &kp T                                             &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S     &kp D         &kp F          &kp G        &kp LS(LG(S))        &kp MINUS       &kp H      &kp J  &lt 5 K    &kp L    &kp BACKSPACE
+&mt LEFT_SHIFT Z  &kp X     &kp C         &kp V          &lt 6 B      &kp JP_COLON         &kp SEMICOLON   &kp N      &kp M  &kp COMMA  &kp DOT  &kp ENTER
 &kp LCTRL         &kp LALT  &kp LEFT_GUI  &lt 1 JP_EISU  &lt 3 SPACE  &lt 2 LA(GRAVE)      &kp LEFT_SHIFT  &kp ENTER                             &kp DEL
             >;
 
@@ -120,10 +116,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESC         &kp EXCLAMATION  &kp HASH           &kp JP_CARET    &kp JP_ASTERISK                                      &kp JP_BACKQUOTE   &kp JP_QUOTE        &kp JP_LPAREN       &kp JP_RPAREN       &kp JP_EQUAL
-&kp TAB         &kp QUESTION     &kp DOLLAR         &kp MINUS       &kp PERCENT     &kp LC(LA(KP_NUMBER_0))      &trans  &kp SLASH          &kp JP_DQUOTE       &kp JP_LBRACKET     &kp JP_RBRACKET     &kp JP_PLUS
-&kp LEFT_SHIFT  &trans           &kp JP_AMPERSAND   &kp JP_TILDE    &kp JP_AT       &trans                       &trans  &kp JP_PIPE        &kp JP_UNDERSCORE   &kp JP_LBRACE       &kp JP_RBRACE       &kp MINUS
-&trans          &trans           &trans             &trans          &trans          &trans                       &trans  &trans                                                                         &kp JP_YEN
+&kp ESC         &kp EXCLAMATION  &kp HASH          &kp JP_CARET  &kp JP_ASTERISK                                       &kp JP_BACKQUOTE  &kp JP_QUOTE       &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_EQUAL
+&kp TAB         &kp QUESTION     &kp DOLLAR        &kp MINUS     &kp PERCENT      &kp LC(LA(KP_NUMBER_0))      &trans  &kp SLASH         &kp JP_DQUOTE      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_PLUS
+&kp LEFT_SHIFT  &trans           &kp JP_AMPERSAND  &kp JP_TILDE  &kp JP_AT        &trans                       &trans  &kp JP_PIPE       &kp JP_UNDERSCORE  &kp JP_LBRACE    &kp JP_RBRACE    &kp MINUS
+&trans          &trans           &trans            &trans        &trans           &trans                       &trans  &trans                                                                 &kp JP_YEN
             >;
         };
 
