@@ -35,7 +35,7 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
+    // automouse-layer = <4>;
     scroll-layers = <5>;
 
     arrows {
@@ -57,28 +57,31 @@
         compatible = "zmk,combos";
 
         tab {
+            timeout-ms = <30>;
             bindings = <&kp TAB>;
             key-positions = <1 2>;
+            require-prior-idle-ms = <120>; 
         };
 
         escape {
+            timeout-ms = <30>;
             bindings = <&to_layer_0 ESCAPE>;
             key-positions = <0 1>;
+            require-prior-idle-ms = <120>; 
         };
 
         mouse_left {
+            timeout-ms = <30>;
             bindings = <&mkp MB1>;
             key-positions = <18 19>;
+            require-prior-idle-ms = <120>; 
         };
 
         mouse_right {
+            timeout-ms = <30>;
             bindings = <&mkp RCLK>;
             key-positions = <19 20>;
-        };
-
-        capture {
-            bindings = <&kp LS(LG(S))>;
-            key-positions = <32 33>;
+            require-prior-idle-ms = <120>; 
         };
     };
 
@@ -149,7 +152,7 @@
             bindings = <
 &none   &none  &none  &none  &none                        &none  &none          &mmv MOVE_UP    &none           &none
 &none   &none  &none  &none  &none     &none      &none   &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&none   &none  &none  &none  &mkp MB3  &none      &none   &none  &none          &none          &none           &trans
+&none   &none  &none  &none  &mkp MB1  &none      &none   &none  &none          &none          &none           &trans
 &trans  &trans &trans &trans &trans    &trans     &trans  &trans                                                   &trans
             >;
         };
